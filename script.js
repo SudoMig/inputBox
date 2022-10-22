@@ -1,10 +1,6 @@
+const messageInput = document.getElementById('message-input');
 
-
-
-function displayText() {
-    let userInput = document.getElementById('user-input').value
-    document.getElementById('user-output').innerHTML = userInput
-    console.log('clicked ------->', userInput );
-
-
+function getMessage() {
+  document.getElementById('message-output').innerHTML = messageInput.value;
+  messageInput.value = ""
 }
